@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		855F89401A29F3D700078C74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F893F1A29F3D700078C74 /* main.m */; };
+		855F89481A29F40E00078C74 /* IntervalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F89471A29F40E00078C74 /* IntervalObject.m */; };
+		855F89581A2A0C7B00078C74 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F89561A2A0C7B00078C74 /* NSDate+Utils.m */; };
+		85F2C30C1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F2C30B1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		855F893A1A29F3D700078C74 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		855F893C1A29F3D700078C74 /* Time Intervals Exclusive Sweep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Time Intervals Exclusive Sweep"; sourceTree = BUILT_PRODUCTS_DIR; };
+		855F893F1A29F3D700078C74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		855F89461A29F40E00078C74 /* IntervalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalObject.h; sourceTree = "<group>"; };
+		855F89471A29F40E00078C74 /* IntervalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntervalObject.m; sourceTree = "<group>"; };
+		855F89551A2A0C7B00078C74 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		855F89561A2A0C7B00078C74 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
+		85F2C30A1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+PriorityQueue.h"; sourceTree = "<group>"; };
+		85F2C30B1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+PriorityQueue.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		855F89391A29F3D700078C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		855F89331A29F3D700078C74 = {
+			isa = PBXGroup;
+			children = (
+				855F893E1A29F3D700078C74 /* algorithm test */,
+				855F893D1A29F3D700078C74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		855F893D1A29F3D700078C74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				855F893C1A29F3D700078C74 /* Time Intervals Exclusive Sweep */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		855F893E1A29F3D700078C74 /* algorithm test */ = {
+			isa = PBXGroup;
+			children = (
+				855F89551A2A0C7B00078C74 /* NSDate+Utils.h */,
+				855F89561A2A0C7B00078C74 /* NSDate+Utils.m */,
+				85F2C30A1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.h */,
+				85F2C30B1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m */,
+				855F89461A29F40E00078C74 /* IntervalObject.h */,
+				855F89471A29F40E00078C74 /* IntervalObject.m */,
+				855F893F1A29F3D700078C74 /* main.m */,
+			);
+			name = "algorithm test";
+			path = "time intervals exclusions test";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		855F893B1A29F3D700078C74 /* Time Intervals Exclusive Sweep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855F89431A29F3D700078C74 /* Build configuration list for PBXNativeTarget "Time Intervals Exclusive Sweep" */;
+			buildPhases = (
+				855F89381A29F3D700078C74 /* Sources */,
+				855F89391A29F3D700078C74 /* Frameworks */,
+				855F893A1A29F3D700078C74 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time Intervals Exclusive Sweep";
+			productName = "algorithm test";
+			productReference = 855F893C1A29F3D700078C74 /* Time Intervals Exclusive Sweep */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		855F89341A29F3D700078C74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Saturated Colors";
+				TargetAttributes = {
+					855F893B1A29F3D700078C74 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 855F89371A29F3D700078C74 /* Build configuration list for PBXProject "Time Intervals Exclusive Sweep" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 855F89331A29F3D700078C74;
+			productRefGroup = 855F893D1A29F3D700078C74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				855F893B1A29F3D700078C74 /* Time Intervals Exclusive Sweep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		855F89381A29F3D700078C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F2C30C1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m in Sources */,
+				855F89581A2A0C7B00078C74 /* NSDate+Utils.m in Sources */,
+				855F89401A29F3D700078C74 /* main.m in Sources */,
+				855F89481A29F40E00078C74 /* IntervalObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		855F89411A29F3D700078C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		855F89421A29F3D700078C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		855F89441A29F3D700078C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Time Intervals Exclusive Sweep";
+			};
+			name = Debug;
+		};
+		855F89451A29F3D700078C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Time Intervals Exclusive Sweep";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		855F89371A29F3D700078C74 /* Build configuration list for PBXProject "Time Intervals Exclusive Sweep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855F89411A29F3D700078C74 /* Debug */,
+				855F89421A29F3D700078C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855F89431A29F3D700078C74 /* Build configuration list for PBXNativeTarget "Time Intervals Exclusive Sweep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855F89441A29F3D700078C74 /* Debug */,
+				855F89451A29F3D700078C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 855F89341A29F3D700078C74 /* Project object */;
+}
