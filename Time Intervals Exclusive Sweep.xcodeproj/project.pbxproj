@@ -26,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		850F5BCB1A2B404F00DCD069 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		855F893C1A29F3D700078C74 /* Time Intervals Exclusive Sweep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Time Intervals Exclusive Sweep"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855F893F1A29F3D700078C74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		855F89461A29F40E00078C74 /* IntervalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalObject.h; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		855F89331A29F3D700078C74 = {
 			isa = PBXGroup;
 			children = (
+				850F5BCB1A2B404F00DCD069 /* LICENSE */,
 				855F893E1A29F3D700078C74 /* algorithm test */,
 				855F893D1A29F3D700078C74 /* Products */,
 			);
