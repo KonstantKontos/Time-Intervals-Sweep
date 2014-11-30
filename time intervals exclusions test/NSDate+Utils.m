@@ -3,7 +3,7 @@
 //  firstnotice
 //
 //  Created by Konstantinos Kontos on 13/10/14.
-//  Copyright (c) 2014 Futures primer. All rights reserved.
+//  Copyright (c) 2014 Saturated Colors. All rights reserved.
 //
 
 #import "NSDate+Utils.h"
