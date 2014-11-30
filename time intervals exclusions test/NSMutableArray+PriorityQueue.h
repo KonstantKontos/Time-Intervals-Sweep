@@ -1,6 +1,5 @@
 //
 //  NSMutableArray+PriorityQueue.h
-//  algorithm test
 //
 //  Created by Konstantinos Kontos on 30/11/14.
 //  Copyright (c) 2014 Saturated Colors. All rights reserved.
