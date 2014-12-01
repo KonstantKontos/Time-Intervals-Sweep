@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		855F89401A29F3D700078C74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F893F1A29F3D700078C74 /* main.m */; };
-		855F89481A29F40E00078C74 /* IntervalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F89471A29F40E00078C74 /* IntervalObject.m */; };
 		855F89581A2A0C7B00078C74 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 855F89561A2A0C7B00078C74 /* NSDate+Utils.m */; };
 		85F2C30C1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F2C30B1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m */; };
 /* End PBXBuildFile section */
@@ -30,8 +29,6 @@
 		853CF5D81A2B431A004080AE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		855F893C1A29F3D700078C74 /* Time Intervals Exclusive Sweep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Time Intervals Exclusive Sweep"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855F893F1A29F3D700078C74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		855F89461A29F40E00078C74 /* IntervalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalObject.h; sourceTree = "<group>"; };
-		855F89471A29F40E00078C74 /* IntervalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntervalObject.m; sourceTree = "<group>"; };
 		855F89551A2A0C7B00078C74 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
 		855F89561A2A0C7B00078C74 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
 		85F2C30A1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+PriorityQueue.h"; sourceTree = "<group>"; };
@@ -74,8 +71,6 @@
 				855F89561A2A0C7B00078C74 /* NSDate+Utils.m */,
 				85F2C30A1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.h */,
 				85F2C30B1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m */,
-				855F89461A29F40E00078C74 /* IntervalObject.h */,
-				855F89471A29F40E00078C74 /* IntervalObject.m */,
 				855F893F1A29F3D700078C74 /* main.m */,
 			);
 			name = "algorithm test";
@@ -141,7 +136,6 @@
 				85F2C30C1A2B12B00070DDDE /* NSMutableArray+PriorityQueue.m in Sources */,
 				855F89581A2A0C7B00078C74 /* NSDate+Utils.m in Sources */,
 				855F89401A29F3D700078C74 /* main.m in Sources */,
-				855F89481A29F40E00078C74 /* IntervalObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

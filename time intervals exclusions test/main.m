@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "IntervalObject.h"
 #import "NSDate+Utils.h"
 #import "NSMutableArray+PriorityQueue.h"
 

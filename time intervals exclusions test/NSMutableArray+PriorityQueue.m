@@ -7,6 +7,22 @@
 
 #import "NSMutableArray+PriorityQueue.h"
 
+@implementation IntervalObject
+
+-(NSInteger)compareTo:(id)otherObject {
+    IntervalObject *other=(IntervalObject *)otherObject;
+    
+    if (other.start == self.start) {
+        return self.intervalType < other.intervalType ? -1 : 1;
+    } else {
+        return self.start < other.start ? -1 : 1;
+    }
+    
+}
+
+@end
+
+
 @implementation NSMutableArray (PriorityQueue)
 
 -(void)enqueue:(id)object {
