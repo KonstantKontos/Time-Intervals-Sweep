@@ -72,7 +72,7 @@ int main(int argc, const char * argv[]) {
             newInterval.end=timestamp;
             
             
-            [intervals addObject:newInterval];
+            [intervals enqueue:newInterval];
             index++;
         }
         
@@ -98,7 +98,7 @@ int main(int argc, const char * argv[]) {
             newInterval.end=timestamp;
             
             
-            [removals addObject:newInterval];
+            [removals enqueue:newInterval];
             index++;
         }
         
