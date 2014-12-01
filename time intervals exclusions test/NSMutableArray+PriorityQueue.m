@@ -43,4 +43,70 @@
     
 }
 
+
++(NSMutableArray *)sweepQueue:(NSMutableArray *)queue usingIntervalObjectClass:(Class)intervalObjectClass {
+    NSMutableArray *resultArr=[NSMutableArray arrayWithCapacity:queue.count];
+    
+    BOOL isInterval=NO;
+    BOOL isGap=NO;
+    NSTimeInterval intervalStart=0;
+    
+    for (id<PriorityQueueComparable> point in queue) {
+        
+        switch (point.intervalType) {
+            case IntervalPointTypeStart:
+                if (!isGap) {
+                    intervalStart = point.start;
+                }
+                isInterval = true;
+                
+                break;
+            case IntervalPointTypeEnd:
+                if (!isGap) {
+                    NSObject<PriorityQueueComparable> *newInterval=[intervalObjectClass new];
+                    newInterval.start=intervalStart;
+                    newInterval.end=point.start;
+                    newInterval.index=point.index;
+                    
+                    [resultArr addObject:newInterval];
+                }
+                isInterval = false;
+                
+                break;
+            case IntervalPointTypeGapStart:
+                if (isInterval) {
+                    NSObject<PriorityQueueComparable> *newInterval=[intervalObjectClass new];
+                    newInterval.start=intervalStart;
+                    newInterval.end=point.start;
+                    newInterval.index=point.index;
+                    
+                    [resultArr addObject:newInterval];
+                }
+                isGap = true;
+                
+                break;
+            case IntervalPointTypeGapEnd:
+                if (isInterval) {
+                    intervalStart = point.start;
+                }
+                isGap = false;
+                
+                break;
+            default:
+                break;
+        }
+        
+    }
+    
+    NSInteger reIndexCount=0;
+    for (id<PriorityQueueComparable> obj in resultArr) {
+        obj.index=reIndexCount;
+        
+        reIndexCount++;
+    }
+    
+    return resultArr;
+}
+
+
 @end

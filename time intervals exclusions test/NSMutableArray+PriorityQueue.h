@@ -19,6 +19,9 @@ typedef NS_ENUM(NSUInteger, PointType) {
 @required
 @property NSUInteger index;
 @property NSTimeInterval start;
+@property NSTimeInterval end;
+@property PointType intervalType;
+
 -(NSInteger)compareTo:(id)otherObject;
 
 @end
@@ -29,5 +32,7 @@ typedef NS_ENUM(NSUInteger, PointType) {
 -(void)enqueue:(id<PriorityQueueComparable>)object;
 -(id<PriorityQueueComparable>)dequeue;
 -(void)prioritySort;
+
++(NSMutableArray *)sweepQueue:(NSMutableArray *)queue usingIntervalObjectClass:(Class)intervalObjectClass;
 
 @end

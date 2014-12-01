@@ -159,7 +159,7 @@ int main(int argc, const char * argv[]) {
         
         [intervalPointsArr prioritySort];
         
-        NSMutableArray *finalIntervalsArr=sweepQueue(intervalPointsArr);
+        NSMutableArray *finalIntervalsArr=[NSMutableArray sweepQueue:intervalPointsArr usingIntervalObjectClass:[IntervalObject class]];
         
         for (IntervalObject *finalObject in finalIntervalsArr) {
             NSDate *fromDate=[NSDate dateWithTimeIntervalSince1970:finalObject.start];
@@ -173,67 +173,3 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-
-NSMutableArray* sweepQueue(NSMutableArray *queue) {
-    NSMutableArray *resultArr=[NSMutableArray arrayWithCapacity:queue.count];
-    
-    BOOL isInterval=NO;
-    BOOL isGap=NO;
-    NSTimeInterval intervalStart=0;
-    
-    for (IntervalObject *point in queue) {
-        
-        switch (point.intervalType) {
-            case IntervalPointTypeStart:
-                if (!isGap) {
-                    intervalStart = point.start;
-                }
-                isInterval = true;
-                
-                break;
-            case IntervalPointTypeEnd:
-                if (!isGap) {
-                    IntervalObject *newInterval=[IntervalObject new];
-                    newInterval.start=intervalStart;
-                    newInterval.end=point.start;
-                    newInterval.index=point.index;
-                    
-                    [resultArr addObject:newInterval];
-                }
-                isInterval = false;
-                
-                break;
-            case IntervalPointTypeGapStart:
-                if (isInterval) {
-                    IntervalObject *newInterval=[IntervalObject new];
-                    newInterval.start=intervalStart;
-                    newInterval.end=point.start;
-                    newInterval.index=point.index;
-                    
-                    [resultArr addObject:newInterval];
-                }
-                isGap = true;
-                
-                break;
-            case IntervalPointTypeGapEnd:
-                if (isInterval) {
-                    intervalStart = point.start;
-                }
-                isGap = false;
-                
-                break;
-            default:
-                break;
-        }
-        
-    }
-    
-    NSInteger reIndexCount=0;
-    for (IntervalObject *obj in resultArr) {
-        obj.index=reIndexCount;
-        
-        reIndexCount++;
-    }
-    
-    return resultArr;
-}
